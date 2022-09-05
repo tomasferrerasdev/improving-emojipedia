@@ -11,7 +11,7 @@ export const EmojiCategory: FC<Props> = ({ emoji, group, handleFilter }) => {
     <>
       <button
         onClick={() => handleFilter(group)}
-        className="flex items-baseline justify-start pl-7 rounded-md bg-gray-50 py-2 hover:bg-gray-100"
+        className="flex items-baseline justify-start pl-7 rounded-md bg-[#F7f6f3] py-2 hover:bg-gray-100"
       >
         <span className="text-xl mr-4" role={"img"} aria-label={emoji}>
           {emoji}

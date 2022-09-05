@@ -29,12 +29,12 @@ const Home: NextPage = () => {
 
   return (
     <Layout>
-      <h1 className="text-2xl md:text-5xl font-bold text-gray-600 text-center tracking-wide">
-        Emojipedia UI improve 💡
+      <h1 className="text-2xl md:text-5xl font-bold text-black-600 text-center tracking-wide">
+        Emojipedia UI improve
       </h1>
       <div className="flex justify-center">
         <input
-          className="w-full max-w-xl border border-gray-300 p-3 rounded-md my-8 bg-white shadow-md focus:outline-none focus:border-cyan-500 focus:ring-1"
+          className="w-full border border-gray-300 p-3 rounded-md my-8 bg-white shadow-md focus:outline-none focus:border-cyan-500 focus:ring-1"
           id="name"
           type={"text"}
           placeholder="Search for an emoji"
@@ -50,6 +50,12 @@ const Home: NextPage = () => {
             group={category.group}
           />
         ))}
+      </div>
+
+      <div className="relative flex py-5 items-center">
+        <div className="flex-grow border-t border-gray-400"></div>
+        <span className="flex-shrink mx-4 text-gray-400">Emojis</span>
+        <div className="flex-grow border-t border-gray-400"></div>
       </div>
 
       <EmojiList emojis={filteredEmojis} />
