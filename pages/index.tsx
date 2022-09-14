@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <h1 className="text-2xl md:text-5xl font-bold text-black-600 text-center tracking-wide">
-        Emojipedia UI improve
+        Emojipedia UI improve!
       </h1>
       <div className="flex justify-center">
         <input
